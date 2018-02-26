@@ -1,8 +1,0 @@
----
-layout: post
-title:  Welcome!
-date:   2018-01-20 14:54:36 -0700
-categories: jekyll update
----
-This Linked Pasts Network repo and site are just getting under way in 2018.
-Our first task is documenting all of the projects, individuals, and supporting organizations that are the nodes of the network. That graph visualization will appear here soon, with the capability for community adds and edits.
