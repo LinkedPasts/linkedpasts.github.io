@@ -22,7 +22,7 @@
   "periodo": "http://n2t.net/ark:/99152/p0v#",
   "in": "http://www.w3.org/2006/time#hasDateTimeDescription",
   "start": "http://www.w3.org/2006/time#intervalStartedBy",
-  "stop": "http://www.w3.org/2006/time#intervalFinishedBy",
+  "end": "http://www.w3.org/2006/time#intervalFinishedBy",
   "earliestYear": {
     "@type": "http://www.w3.org/2001/XMLSchema#gYear",
     "@id": "periodo:earliestYear"
