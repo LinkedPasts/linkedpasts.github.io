@@ -23,11 +23,11 @@
   "in": "http://www.w3.org/2006/time#hasDateTimeDescription",
   "start": "http://www.w3.org/2006/time#intervalStartedBy",
   "end": "http://www.w3.org/2006/time#intervalFinishedBy",
-  "earliestYear": {
+  "earliest": {
     "@type": "http://www.w3.org/2001/XMLSchema#gYear",
     "@id": "periodo:earliestYear"
   },
-  "latestYear": {
+  "latest": {
     "@type": "http://www.w3.org/2001/XMLSchema#gYear",
     "@id": "periodo:latestYear"
   },
@@ -60,27 +60,27 @@
   "descriptions": {
     "@id": "dcterms:description",
     "@type": "@id",
-    "@container": "@set"
+    "@container": "@list"
   },
-  "attestations": {
+  "attestation": {
     "@id": "lawd:hasAttestation",
     "@type": "@id",
-    "@container": "@set"
+    "@container": "@list"
   },
   "depictions": {
     "@id": "foaf:depiction",
     "@type": "@id",
-    "@container": "@set"
+    "@container": "@list"
   },
   "names": {
     "@id": "lawd:hasName",
     "@type": "@id",
-    "@container": "@set"
+    "@container": "@list"
   },
   "place_type": {
     "@id": "gvp:placeTypePreferred",
     "@type": "@id",
-    "@container": "@set"
+    "@container": "@list"
   },
   "part_of": {
     "@id": "gvp:broaderPartitive",
