@@ -18,7 +18,7 @@
   "when": {"@id": "lp:when"},
   "timespans": { "@container": "@list",  "@id": "lp:timespans" },
   "periods": { "@container": "@set",  "@id": "lp:periods" },
-  "geometries": { "@container": "@list", "@id":"lp:geometries",
+  "geometries": { "@container": "@list", "@id":"lp:geometries"},
 
   "periodo": "http://n2t.net/ark:/99152/p0v#",
   "in": "http://www.w3.org/2006/time#hasDateTimeDescription",
