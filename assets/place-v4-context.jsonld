@@ -11,14 +11,14 @@
   "Polygon": "geojson:Polygon",
   "bbox": { "@container": "@list", "@id": "geojson:bbox" },
   "coordinates": { "@container": "@list", "@id": "geojson:coordinates" },
-  "features": { "@container": "@set",  "@id": "geojson:features" },
+  "features": { "@container": "@list",  "@id": "geojson:features" },
   "geometry": "geojson:geometry",
   "properties": "geojson:properties",
   "lp": "http://linkedpasts.org/vocab#",
   "when": {"@id": "lp:when"},
   "timespans": { "@container": "@list",  "@id": "lp:timespans" },
   "periods": { "@container": "@set",  "@id": "lp:periods" },
-  
+
   "periodo": "http://n2t.net/ark:/99152/p0v#",
   "in": "http://www.w3.org/2006/time#hasDateTimeDescription",
   "start": "http://www.w3.org/2006/time#intervalStartedBy",
