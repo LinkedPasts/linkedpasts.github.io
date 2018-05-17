@@ -1,0 +1,51 @@
+{"@context": {
+    "mygaz": "http://mygaz.org/",
+
+    "geojson": "https://purl.org/geojson/vocab#",
+    "Feature": "geojson:Feature",
+    "FeatureCollection": "geojson:FeatureCollection",
+    "geometry": "geojson:geometry",
+    "GeometryCollection": "geojson:GeometryCollection",
+    "geometries": { "@container": "@set", "@id":"lpo:geometries"},
+    "LineString": "geojson:LineString",
+    "MultiLineString": "geojson:MultiLineString",
+    "MultiPoint": "geojson:MultiPoint",
+    "MultiPolygon": "geojson:MultiPolygon",
+    "Point": "geojson:Point",
+    "Polygon": "geojson:Polygon",
+    "bbox": { "@container": "@list", "@id": "geojson:bbox" },
+    "coordinates": { "@container": "@list", "@id": "geojson:coordinates" },
+    "features": { "@container": "@set",  "@id": "geojson:features" },
+    "properties": "geojson:properties",
+    
+    "geo_wkt":"http://www.opengis.net/ont/geosparql#",
+
+    "lpo": "http://linkedpasts.org/ontology/",
+    "settings": { 
+      "@id": "lpo:settings", 
+      "@container": "@set" },
+    "gvp": "http://vocab.getty.edu/ontology#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "part_of": {
+      "@id": "gvp:broaderPartitive", 
+      "@container": "@set" },
+    "namings": {
+      "@id": "lpo:NameAttest",
+      "@container": "@set"
+    },
+    "when": "lpo:when",
+    "timespans": "lpo:timespan",
+    "start": "lpo:start",
+    "end": "lpo:end",
+
+    "id:": "@id",
+    "type": "@type",
+    "value": {"@id": "rdf:value"},
+    "identifier": "dct:identifier",
+    "label": {"@id": "rdfs:label"},
+    "title": {"@id": "dct:title"},
+    "ccode": {"@id": "gn:countryCode"},
+    "license": "dct:license",
+    "toponym": "lpo:Toponym",
+    "lang": "dct:language"
+}}
