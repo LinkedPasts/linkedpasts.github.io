@@ -16,6 +16,7 @@
   "w3cgeo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
   "geo_wkt":"http://www.opengis.net/ont/geosparql#asWKT",
   "periodo": "http://n2t.net/ark:/99152/#",
+  "time": "http://www.w3.org/2006/time#",
 
   "geojson": "https://purl.org/geojson/vocab#",
   "Feature": "geojson:Feature",
@@ -108,6 +109,8 @@
     "@id": "lpo:PartAttest",
     "@container": "@set"
   },
+  "parent": {"@id": "lpo:Parent"},
+  "parentLabel": {"@id": "rdfs:label"},
   "part_of": {
     "@id": "gvp:broaderPartitive", 
     "@type": "@id" },
