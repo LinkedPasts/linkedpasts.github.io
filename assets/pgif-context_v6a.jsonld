@@ -76,6 +76,10 @@
   "ccode": {"@id": "gn:countryCode"},
   "license": "dct:license",
 
+  "attestation": {"@id": "lawd:hasAttestation" },
+  "publisher": {"@id": "dct:Publisher"},
+  "evidence": {"@id": "cito:citesAsEvidence"},
+
   "descriptions": {
     "@id": "dct:description",
     "@type": "@id",
@@ -93,7 +97,6 @@
     "@type": "@id",
     "@container": "@set"
   },
-
   "namings": {
     "@id": "lpo:NameAttest",
     "@container": "@set"
