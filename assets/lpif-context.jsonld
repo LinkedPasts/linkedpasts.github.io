@@ -120,10 +120,10 @@
     "@type": "@id",
     "@container": "@set"
   },
-  "primary_topic_of": {"@id": "foaf:isPrimaryTopicOf", "@type":"@id" },
-  "subject_of": {"@id": "crm:P129i_is_subject_of", "@type": "@id"},
-  "close_match": {"@id":"skos:closeMatch", "@type":"@id"},
-  "exact_match": {"@id":"skos:exactMatch", "@type":"@id"},
-  "see_also": {"@id":"rdfs:seeAlso", "@type":"@id"}
+  "primaryTopicOf": {"@id": "foaf:isPrimaryTopicOf", "@type":"@id" },
+  "subjectOf": {"@id": "crm:P129i_is_subject_of", "@type": "@id"},
+  "closeMatch": {"@id":"skos:closeMatch", "@type":"@id"},
+  "exactMatch": {"@id":"skos:exactMatch", "@type":"@id"},
+  "seeAlso": {"@id":"rdfs:seeAlso", "@type":"@id"}
 
 }}
