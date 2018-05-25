@@ -1,0 +1,3 @@
+A Linked Pasts Ontology that includes classes and relation for the new Linked Places Interconnection Format (LPIF), is in development.
+
+A draft should be available by 1 June 2018.

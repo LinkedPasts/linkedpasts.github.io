@@ -35,7 +35,7 @@
   "features": { "@container": "@set",  "@id": "geojson:features" },
   "properties": "geojson:properties",
   
-  "lpo": "http://linkedpasts.org/ontology/",
+  "lpo": "http://linkedpasts.org/ontology/coming-soon.txt",
   "gvp": "http://vocab.getty.edu/ontology#",
   "prov": "http://www.w3.org/ns/prov#",
   "settings": { 
