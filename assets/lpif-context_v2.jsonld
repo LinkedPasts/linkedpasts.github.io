@@ -28,7 +28,6 @@
   "geojson": "https://purl.org/geojson/vocab#",
   "Feature": "geojson:Feature",
   "FeatureCollection": "geojson:FeatureCollection",
-  "geometry": "geojson:geometry",
   "GeometryCollection": "geojson:GeometryCollection",
   "LineString": "geojson:LineString",
   "MultiLineString": "geojson:MultiLineString",
@@ -36,6 +35,8 @@
   "MultiPolygon": "geojson:MultiPolygon",
   "Point": "geojson:Point",
   "Polygon": "geojson:Polygon",
+
+  "geometry": "geojson:geometry",
   "bbox": { "@container": "@list", "@id": "geojson:bbox" },
   "coordinates": { "@container": "@list", "@id": "geojson:coordinates" },
   "features": { "@container": "@set",  "@id": "geojson:Feature" },
@@ -116,7 +117,7 @@
   "primaryTopicOf": {"@id": "foaf:isPrimaryTopicOf", "@type":"@id" },
   "subjectOf": {"@id": "crm:P129i_is_subject_of", "@type": "@id"},
   "closeMatch": {"@id":"skos:closeMatch", "@type":"@id"},
-  "exactMatch": {"@id":"skos:exactMatch", "@type":"@id"},
+  "exactMatch": {"@id":"skos:exactMatch", "@container": "@set", "@type":"@id"},
   "seeAlso": {"@id":"rdfs:seeAlso", "@type":"@id"}
 
 }}
