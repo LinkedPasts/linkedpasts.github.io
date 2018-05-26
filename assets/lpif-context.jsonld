@@ -1,29 +1,34 @@
 {"@context": {
-  "mygaz": "http://mygaz.org/",
+  "id:": "@id",
+  "type": "@type",
 
+  "lpo": "http://linkedpasts.org/ontology/coming-soon.txt",
+  "lawd": "http://lawd.info/ontology/",
+  "prov": "http://www.w3.org/ns/prov#",
+  "gvp": "http://vocab.getty.edu/ontology#",
   "aat": "http://vocab.getty.edu/aat/",
+  "crm": "http://erlangen-crm.org/current/",
+
+  "skos": "http://www.w3.org/2004/02/skos/core#",
+  "foaf": "http://xmlns.com/foaf/0.1/",
   "cc": "http://creativecommons.org/licenses/",
   "cito": "http://purl.org/spar/cito#",
-  "crm": "http://erlangen-crm.org/current/",
   "dct": "http://purl.org/dc/terms/",
-  "foaf": "http://xmlns.com/foaf/0.1/",
   "gn": "http://www.geonames.org/ontology#",
-  "gvp": "http://vocab.getty.edu/ontology#",
-  "lawd": "http://lawd.info/ontology/",
+
   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-  "skos": "http://www.w3.org/2004/02/skos/core#",
-  "w3cgeo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-  "geo_wkt":"http://www.opengis.net/ont/geosparql#asWKT",
-  "periodo": "http://n2t.net/ark:/99152/#",
-  "time": "http://www.w3.org/2006/time#",
+  "identifier": "dct:identifier",
+  "label": {"@id": "rdfs:label"},
+  "value": {"@id": "rdf:value"},
+  "title": {"@id": "dct:title"},
+  "license": "dct:license",
 
   "geojson": "https://purl.org/geojson/vocab#",
   "Feature": "geojson:Feature",
   "FeatureCollection": "geojson:FeatureCollection",
   "geometry": "geojson:geometry",
   "GeometryCollection": "geojson:GeometryCollection",
-  "geometries": { "@container": "@set", "@id":"lpo:geometries"},
   "LineString": "geojson:LineString",
   "MultiLineString": "geojson:MultiLineString",
   "MultiPoint": "geojson:MultiPoint",
@@ -32,28 +37,24 @@
   "Polygon": "geojson:Polygon",
   "bbox": { "@container": "@list", "@id": "geojson:bbox" },
   "coordinates": { "@container": "@list", "@id": "geojson:coordinates" },
-  "features": { "@container": "@set",  "@id": "geojson:features" },
+  "features": { "@container": "@set",  "@id": "geojson:Feature" },
   "properties": "geojson:properties",
   
-  "lpo": "http://linkedpasts.org/ontology/coming-soon.txt",
-  "gvp": "http://vocab.getty.edu/ontology#",
-  "prov": "http://www.w3.org/ns/prov#",
-  "settings": { 
-    "@id": "lpo:settings", 
-    "@container": "@set" },
-  "part_of": {
-    "@id": "gvp:broaderPartitive", 
-    "@container": "@set" },
-  "namings": {
-    "@id": "lpo:NameAttest",
-    "@container": "@set"
-  },
+  "geo_wkt":"http://www.opengis.net/ont/geosparql#asWKT",
+  "periodo": "http://n2t.net/ark:/99152/#",
+  "time": "http://www.w3.org/2006/time#",
+  "geometries": { "@container": "@set", "@id":"geojson:geometry"},
+  "ccode": {"@id": "gn:countryCode"},
 
   "when": {"@id": "lpo:when"},
-  "timespans": { "@container": "@set",  "@id": "lpo:timespans" },
-  "periods": { "@container": "@set",  "@id": "lpo:periods" },
-  "geometries": { "@container": "@set", "@id":"lpo:geometries"},
-
+  "timespans": { 
+    "@container": "@set",  
+    "@id": "lpo:timespan" 
+  },
+  "periods": { 
+    "@container": "@set",  
+    "@id": "lpo:period" 
+  },
   "start": "time:intervalStartedBy",
   "end": "time:intervalFinishedBy",
   "in": {
@@ -68,14 +69,6 @@
     "@type": "time:DateTimeDescription",
     "@id": "lp:latest"
   },
-  "id:": "@id",
-  "type": "@type",
-  "value": {"@id": "rdf:value"},
-  "identifier": "dct:identifier",
-  "label": {"@id": "rdfs:label"},
-  "title": {"@id": "dct:title"},
-  "ccode": {"@id": "gn:countryCode"},
-  "license": "dct:license",
 
   "attestation": {"@id": "lawd:hasAttestation" },
   "publisher": {"@id": "dct:Publisher"},
@@ -98,6 +91,7 @@
     "@type": "@id",
     "@container": "@set"
   },
+
   "namings": {
     "@id": "lpo:NameAttest",
     "@container": "@set"
