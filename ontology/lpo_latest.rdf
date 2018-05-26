@@ -1,36 +1,54 @@
-Place a rdfs:Class ;
-  lpo:scopedBy Setting .
+<!--
+Linked Pasts Ontology
+an active work in progress, May 2018 
+-->
 
-Setting a rdfs:Class ;
-  lpo:hasTemporalScope  TemporalScope ;
-  lpo:hasSpatialScope  SpatialScope .
-
-TemporalScope a rdfs:Class .
-SpatialScope a rdfs:Class .
-
-TemporalExtent subclassOf TemporalScope ;
-  rdfs:isDefinedBy owl-t:TemporalEntity .
-
-PeriodDefinition a skos:Concept ;
-  subclassOf lpo:TemporalScope .
-
-SpatialExtent subclassOf SpatialScope ;
-  rdfs:isDefinedBy owl-t:TemporalEntity .
+@prefix lpo: <http://linkedpasts.org/ontology/latest.rdf> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lawd: <http://lawd.info/ontology/> .
+@prefix crm: <http://erlangen-crm.org/current/> .
 
 
-
-Place scopedBy When
-Location scopedBy When
-Naming scopedBy When
-Parthood scopedBy When
-
-
-
-Setting hasSpatialScope  SpatialScope 
-
-
-<!--  Classes -->
 lpo:Place a rdfs:Class ;
+  owl:equivalentClass lawd:Place ;
+  lpo:scopedBy Setting ;
+  rdfs:comment  "" .
+
+lpo:Setting a rdfs:Class ;
+  lpo:hasTemporalScope  TemporalScope ;
+  lpo:hasSpatialScope  SpatialScope ;
+  rdfs:comment: "A Setting describes the spatial and/or temporal scope of a named place or historical period, Cf. http://carsten.io/Grossner_Janowicz_Kessler-Place_Period_Setting.pdf" .
+
+<!-- temporal -->
+
+lpo:TemporalScope a rdfs:Class ;
+  rdfs:comment  "" .
+
+lpo:TemporalExtent subclassOf TemporalScope ;
+  rdfs:isDefinedBy owl-t:TemporalEntity ;
+  rdfs:comment  "" .
+
+lpo:PeriodDefinition subclassOf lpo:TemporalScope ;
+  rdfs:isDefinedBy "https://test.perio.do/d.json" ;
+  rdfs:comment  "" .
+
+<!-- spatial -->
+
+lpo:SpatialScope a rdfs:Class ;
+  rdfs:comment  "" .
+
+lpo:SpatialExtent subclassOf SpatialScope ;
+  rdfs:isDefinedBy "http://geojson.org/geojson-ld/vocab.rdf" ;
+  rdfs:comment  "" .
+
+<!--  More Classes -->
 
 lpo:NameAttest a rdfs:Class ;
 
@@ -38,23 +56,14 @@ lpo:PartAttest a rdfs:Class ;
 
 lpo:LocAttest a rdfs:Class ;
 
-lpo:PeriodDefinition a skos:Concept .
-
-
-
-
-lpo:Foo a rdfs:Class ;
-lpo:Foo a rdfs:Class ;
-lpo:Foo a rdfs:Class ;
-lpo:Foo a rdfs:Class ;
-
 
 <!--  Functional Properties -->
+
 lpo:when  a owl:FunctionalProperty ;
   rdfs:range  lpo:TemporalScope ;
   rdfs:comment  "Relates an instance of an entity or property class with a temporal expression for a period of time it existed or was valid. For example, the existence of a place, its association with a particular name, its spatial location/extent, or its relation with another place. That TemporalScope could be a metric DateTimeExpression or a web resource defining a named historical period" .
 
 
-
 <!--  Datatype Properties -->
-lpo: a owl:DatatypeProperty ;
+
+lpo:foo a owl:DatatypeProperty ;
