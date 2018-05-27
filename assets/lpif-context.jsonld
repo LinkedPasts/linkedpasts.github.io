@@ -4,7 +4,7 @@
   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
 
-  "lpo": "http://linkedpasts.org/ontology/lpo_latest.rdf",
+  "lpo": "http://linkedpasts.org/ontology/lpo_latest.ttl",
   "lawd": "http://lawd.info/ontology/",
   "prov": "http://www.w3.org/ns/prov#",
   "gvp": "http://vocab.getty.edu/ontology#",
@@ -26,6 +26,7 @@
   "license": "dct:license",
 
   "geojson": "https://purl.org/geojson/vocab#",
+  "geojson-t": "https://github.com/kgeographer/geojson-t",
   "Feature": "geojson:Feature",
   "FeatureCollection": "geojson:FeatureCollection",
   "GeometryCollection": "geojson:GeometryCollection",
@@ -35,12 +36,11 @@
   "MultiPolygon": "geojson:MultiPolygon",
   "Point": "geojson:Point",
   "Polygon": "geojson:Polygon",
-
-  "geometry": "geojson:geometry",
   "bbox": { "@container": "@list", "@id": "geojson:bbox" },
   "coordinates": { "@container": "@list", "@id": "geojson:coordinates" },
   "features": { "@container": "@set",  "@id": "geojson:Feature" },
   "properties": "geojson:properties",
+  "geometry": "geojson-t:geometry",
   
   "geo_wkt":"http://www.opengis.net/ont/geosparql#asWKT",
   "periodo": "http://n2t.net/ark:/99152/#",
@@ -52,7 +52,7 @@
   "when": {"@id": "lpo:when"},
   "timespans": { 
     "@container": "@set",  
-    "@id": "lpo:timespan" 
+    "@id": "lpo:Timespan" 
   },
   "periods": { 
     "@container": "@set",  
@@ -93,14 +93,14 @@
   },
 
   "namings": {
-    "@id": "lpo:NameAttest",
+    "@id": "lpo:NameAttestation",
     "@container": "@set"
   },
   "toponym": "lpo:Toponym",
   "lang": "dct:language",
 
   "parthood": {
-    "@id": "lpo:PartAttest",
+    "@id": "lpo:PartAttestation",
     "@container": "@set"
   },
   "parent": {"@id": "lpo:Parent"},
