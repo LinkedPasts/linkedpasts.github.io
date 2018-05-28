@@ -20,7 +20,7 @@
 ## in combination. This roughly corresponds to Dublin Core's 
 ## dc:coverage, encompassing dc:spatial and dc:temporal.
 ##
-## cf. http:##linkedpasts.org/docs/Place_Period_Setting.pdf
+## cf. http:##linkedpasts.org/assets/Place_Period_Setting.pdf
 ##
 ## NOTE:
 ## In LPIF, an lpo:when property can be used to temporally scope 
