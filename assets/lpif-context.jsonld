@@ -73,6 +73,8 @@
   "attestation": {"@id": "lawd:hasAttestation" },
   "publisher": {"@id": "dct:Publisher"},
   "evidence": {"@id": "cito:citesAsEvidence"},
+  "cites": {"@id": "cito:cites"},
+  "citation": "lpo:citation",
 
   "descriptions": {
     "@id": "dct:description",
