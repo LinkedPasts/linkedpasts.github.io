@@ -27,8 +27,8 @@
 
   "geojson": "https://purl.org/geojson/vocab#",
   "geojson-t": "https://github.com/kgeographer/geojson-t/",
-  "Feature": "geojson:Feature",
   "FeatureCollection": "geojson:FeatureCollection",
+  "Feature": "geojson:Feature",
   "GeometryCollection": "geojson:GeometryCollection",
   "LineString": "geojson:LineString",
   "MultiLineString": "geojson:MultiLineString",
@@ -38,7 +38,11 @@
   "Polygon": "geojson:Polygon",
   "bbox": { "@container": "@list", "@id": "geojson:bbox" },
   "coordinates": { "@container": "@list", "@id": "geojson:coordinates" },
-  "features": { "@container": "@set",  "@id": "geojson:Feature" },
+  "features": {
+    "@id": "lpo:hasFeature",
+    "@type": "geojson:Feature",
+    "@container": "@set"
+  },
   "properties": "geojson:properties",
   "geometry": "geojson-t:geometry",
   
