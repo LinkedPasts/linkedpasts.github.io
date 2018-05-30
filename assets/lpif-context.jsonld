@@ -4,7 +4,7 @@
   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
 
-  "lpo": "http://linkedpasts.org/ontology/lpo_latest.ttl",
+  "lpo": "http://linkedpasts.org/ontology/lpo_latest.ttl#",
   "lawd": "http://lawd.info/ontology/",
   "prov": "http://www.w3.org/ns/prov#",
   "gvp": "http://vocab.getty.edu/ontology#",
@@ -26,7 +26,7 @@
   "license": "dct:license",
 
   "geojson": "https://purl.org/geojson/vocab#",
-  "geojson-t": "https://github.com/kgeographer/geojson-t",
+  "geojson-t": "https://github.com/kgeographer/geojson-t/",
   "Feature": "geojson:Feature",
   "FeatureCollection": "geojson:FeatureCollection",
   "GeometryCollection": "geojson:GeometryCollection",
@@ -73,8 +73,7 @@
   "attestation": {"@id": "lawd:hasAttestation" },
   "publisher": {"@id": "dct:Publisher"},
   "evidence": {"@id": "cito:citesAsEvidence"},
-  "cites": {"@id": "cito:cites"},
-  "citation": "lpo:citation",
+  "citation": {"@id": "cito:cites"},
 
   "descriptions": {
     "@id": "dct:description",
