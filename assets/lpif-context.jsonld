@@ -45,18 +45,23 @@
   "geo_wkt":"http://www.opengis.net/ont/geosparql#asWKT",
   "periodo": "http://n2t.net/ark:/99152/#",
   "ccode": {"@id": "gn:countryCode"},
+
   "geometries": { 
-    "@container": "@set", 
-    "@id":"lpo:Setting"},
+    "@id":"lpo:setting",
+    "@type": "lpo:Setting",
+    "@container": "@set"
+  },
 
   "when": {"@id": "lpo:when"},
   "timespans": { 
-    "@container": "@set",  
-    "@id": "lpo:Timespan" 
+    "@id": "lpo:timespan",
+    "@type": "lpo:Timespan", 
+    "@container": "@set"
   },
   "periods": { 
-    "@container": "@set",  
-    "@id": "lpo:PeriodDefinition" 
+    "@id": "lpo:period",
+    "@type": "lpo:PeriodDefinition",
+    "@container": "@set"
   },
   "start": "time:intervalStartedBy",
   "end": "time:intervalFinishedBy",
@@ -70,14 +75,8 @@
     "@id": "lpo:latest"
   },
 
-  "attestation": {"@id": "lawd:hasAttestation" },
-  "publisher": {"@id": "dct:Publisher"},
-  "evidence": {"@id": "cito:citesAsEvidence"},
-  "citation": {"@id": "cito:cites"},
-
   "descriptions": {
     "@id": "dct:description",
-    "@type": "@id",
     "@container": "@set"
   },
 
@@ -89,36 +88,36 @@
 
   "placetypes": {
     "@id": "gvp:placeTypePreferred",
-    "@type": "@id",
     "@container": "@set"
   },
 
   "namings": {
-    "@id": "lpo:NameAttestation",
+    "@id": "lpo:nameAttestation",
+    "@type": "@id",
     "@container": "@set"
   },
-  "toponym": "lpo:Toponym",
+  "toponym": "lpo:toponym",
   "lang": "dct:language",
 
+  "attestation": {"@id": "lawd:hasAttestation" },
+  "publisher": {"@id": "dct:publisher"},
+  "evidence": {"@id": "cito:citesAsEvidence"},
+  "citation": {"@id": "cito:cites"},
+
   "parthood": {
-    "@id": "lpo:PartAttestation",
+    "@id": "lpo:partAttestation",
+    "@type": "lpo:PartAttestation",
     "@container": "@set"
   },
-  "parent": {"@id": "lpo:Parent"},
+  "parent": {"@id": "lpo:hasParent"},
   "parentLabel": {"@id": "rdfs:label"},
   "part_of": {
     "@id": "gvp:broaderPartitive", 
     "@type": "@id" },
 
-  "related": {
-    "@id": "dct:relation",
-    "@type": "@id",
-    "@container": "@set"
-  },
   "primaryTopicOf": {"@id": "foaf:isPrimaryTopicOf", "@container": "@set", "@type":"@id" },
   "subjectOf": {"@id": "crm:P129i_is_subject_of", "@container": "@set", "@type": "@id"},
   "closeMatch": {"@id":"skos:closeMatch", "@container": "@set", "@type":"@id"},
   "exactMatch": {"@id":"skos:exactMatch", "@container": "@set", "@type":"@id"},
   "seeAlso": {"@id":"rdfs:seeAlso", "@container": "@set", "@type":"@id"}
-
 }}
