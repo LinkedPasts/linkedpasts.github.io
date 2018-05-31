@@ -81,6 +81,7 @@
 
   "descriptions": {
     "@id": "dct:description",
+    "@type": "@id",
     "@container": "@set"
   },
 
