@@ -104,10 +104,10 @@
   "toponym": "lpo:toponym",
   "lang": "dct:language",
 
-  "attestation": {"@id": "lawd:hasAttestation" },
-  "publisher": {"@id": "dct:publisher"},
-  "evidence": {"@id": "cito:citesAsEvidence"},
-  "citation": {"@id": "cito:cites"},
+  "citation": {
+    "@id": "cito:cites",
+    "@type": "@id"
+  },
 
   "parthood": {
     "@id": "lpo:partAttestation",
