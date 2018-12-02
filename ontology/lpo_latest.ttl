@@ -1,3 +1,6 @@
+## AS OF SEP 11, 2018 THIS DOCUMENT IS AN OUTDATED DRAFT
+## an updated version is in development
+
 @prefix lpo: <http://linkedpasts.org/ontology#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -15,19 +18,19 @@
 ##
 ## Place and Setting
 ##
-## Resources (including an lpo:Place) can be lpo:scopedBy an 
-## lpo:Setting defining locations and times, separately or 
-## in combination. This roughly corresponds to Dublin Core's 
+## Resources (including an lpo:Place) can be lpo:scopedBy an
+## lpo:Setting defining locations and times, separately or
+## in combination. This roughly corresponds to Dublin Core's
 ## dc:coverage, encompassing dc:spatial and dc:temporal.
 ##
 ## cf. http://linkedpasts.org/assets/Place_Period_Setting.pdf
 ##
 ## NOTE:
-## In LPIF, an lpo:when property can be used to temporally scope 
-## any of: (i)a geojson:Feature, (ii) an lpo:NameAttestation, 
-## (iii) an lpo:PartAttestation, (iv) members of a 
-## geojson-t:GeometryCollection. The range of lpo:when is an 
-## lpo:TemporalScope, which can be an lpo:TemporalExtent 
+## In LPIF, an lpo:when property can be used to temporally scope
+## any of: (i)a geojson:Feature, (ii) an lpo:NameAttestation,
+## (iii) an lpo:PartAttestation, (iv) members of a
+## geojson-t:GeometryCollection. The range of lpo:when is an
+## lpo:TemporalScope, which can be an lpo:TemporalExtent
 ## (one or more lpo:Timespan) and/or lpo:PeriodDefinition.
 ##
 

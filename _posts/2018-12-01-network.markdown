@@ -1,0 +1,16 @@
+---
+layout: post
+title:  Visualizing the Linked Pasts Network
+date:   2018-12-01 18:00:00 -0700
+categories: jekyll update
+---
+
+<iframe
+  src="https://embed.kumu.io/8562b5d536bd44aa4fc49f1e3c9ed480"
+  width="940" height="600" frameborder="0"></iframe>
+
+
+Linked Pasts Network refers to a growing collection of historical datasets published as Linked Open Data and the community of researchers across the globe whose projects are producing and using them. The nature of this emerging network is discussed in the Dec 2017 white paper, ["From Linking Places to a Linked Pasts Network"]({{ "/assets/lp_whitepaper.pdf" | absolute_url }}){:target="_blank"}
+
+This site and [repo]({{ 'https://github.com/linkedpasts' | absolute_url}}){:target="_blank"} are just getting under way in 2018. Our first task is documenting all of the projects, individuals, and supporting organizations that are the nodes of the network. An interactive graph visualization will appear here soon, with the capability for community adds and edits. In the meantime, this static image presents a partial picture:
+![Linked Pasts Network]({{ "/assets/lp-network_201805.png" | absolute_url }}){:target='_blank'}
