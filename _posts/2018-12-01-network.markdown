@@ -5,11 +5,12 @@ date:   2018-12-01 18:00:00 -0700
 categories: jekyll update
 ---
 
-<iframe
+<!-- <iframe
   src="https://embed.kumu.io/1140db5c6ab7f22791c8be13b5896688"
-  width="940" height="600" frameborder="0"></iframe>
+  width="940" height="600" frameborder="0"></iframe> -->
 
-An interactive version of this visualization is found at https://kumu.io/lpnetwork/linked-pasts-network-jan-2019
+![An interactive version of this visualization]({{ "https://kumu.io/lpnetwork/linked-pasts-network-jan-2019" | absolute_url }}){:target='_blank'}
+
 ![Linked Pasts Network]({{ "/assets/lp-network_201901.jpg" | absolute_url }}){:target='_blank'}
 
 Linked Pasts Network refers to a growing collection of historical datasets published as Linked Open Data and the community of researchers across the globe whose projects are producing and using them. The nature of this emerging network is discussed at the Linked Pasts series of international symposia. [Linked Pasts IV](https://www.eventbrite.com/e/linked-pasts-iv-views-from-inside-the-lod-cloud-tickets-47761266233) was held in Mainz, Germany from 11-14 December 2018.
