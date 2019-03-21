@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "lpo": "http://linkedpasts.org/ontology/#",
+    "Event":              "lpo:Event",
+    "HistoricalProcess":  "lpo:HistoricalProcess",
+    "Journey":            "lpo:Journey",
+    "relation":           "lpo:relation",
+    "when":               "lpo:when",
+    "waypoint":           "lpo:waypoint",
+    "findspot":           "lpo:findspot",
+    "birthplace":         "lpo:birthplace",
+    "deathplace":         "lpo:deathplace"
+  }
+}
